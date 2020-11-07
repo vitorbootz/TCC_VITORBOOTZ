@@ -1,3 +1,41 @@
+##############################################################################################
+# PURPOSE
+#   Measures the flux of the emission lines of the spectra by integrating the adjusted Gaussian function on these lines
+# 
+# CREATED BY:
+#   Felícia Palacios
+#
+# ADAPTED BY:
+#   Vitor Eduardo Buss Bootz
+#
+# CALLING SEQUENCE
+#   python Felícia_Palácios_Flux_Calculator.py     --> In terminal
+#
+# INPUT PARAMETERS
+#   output_dir            --> Output directory name
+#   output_file           --> Output filename
+#   starlight_input_dir   --> Directory of input files
+#   starlight_output_dir  --> Directory of input files
+#    
+# OUTPUT
+#   sample_flux_lines.csv (flag_correction == 'off')
+#   corrections.csv (flag_correction == 'on')
+#   PNG images showing the adjusts of the function to check its quality
+#
+# REQUIRED SCRIPTS
+#
+#   
+# COMMENTS
+#   Vacuum wavelengths used
+#   The 'flag_correction' flag allows the modification of problematic spectra without modifying the well-ajusted spectra
+#
+##############################################################################################
+
+##############################################################################################
+# INPUTS
+##############################################################################################
+
+
 def interp(xin,xout,yin): #Tentar arrumar isso no futuro.. problemas na conversão entre R e Python
     Ninterpol = len(xout)
     yout = np.array([])
