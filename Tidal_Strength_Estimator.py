@@ -1,3 +1,31 @@
+##############################################################################################
+# PURPOSE
+#   Measures the Tidal Strength Estimator (Q) parameter and creates the plot 'Tipical_Q_values_GEMA' (Fig. 4.1 - TCC)
+# 
+# CREATED BY:
+#   Vitor Eduardo Buss Bootz
+#
+# ADAPTED BY:
+#
+# CALLING SEQUENCE
+#   python Tidal_Strength_Estimator.py     --> In terminal
+#
+# INPUT PARAMETERS
+#   output_file           --> Output filename
+#   list_galaxies         --> List of objects
+#   starlight_file        --> Starlight results
+#   GEMA-1.0.1.fits       --> GEMA sample data
+#
+# OUTPUT
+#   Q_values.csv
+#   Plot Tipical_Q_values_GEMA.pdf
+#
+# REQUIRED SCRIPTS
+#
+# COMMENTS
+#
+##############################################################################################
+
 import pandas as pd
 import numpy as np
 pd.set_option('max_columns', None)
