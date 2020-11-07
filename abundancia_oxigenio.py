@@ -1,3 +1,33 @@
+##############################################################################################
+# PURPOSE
+#   Measures the oxygen abundances of galaxies using Pilyugin & Grebel (2016)
+# 
+# CREATED BY:
+#   Vitor Eduardo Buss Bootz
+#
+# ADAPTED BY:
+#
+# CALLING SEQUENCE
+#   python abundancia_oxigenio.py     --> In terminal
+#
+# INPUT PARAMETERS
+#   lcgs_fluxos_corrigidos_sample.csv           --> Corrected flux sample filename
+#   lcgs_fluxos_corrigidos_sdss.csv             --> Corrected flux sdss filename
+#   lcgs_fluxos_corrigidos_control.csv          --> Corrected flux control filename
+#
+# OUTPUT
+#   abundancias_sample.csv
+#   abundancias_control.csv
+#   abundancias_sdss.csv
+#
+# REQUIRED SCRIPTS
+#
+# COMMENTS
+#   The 'flag_sample_sdss' flag allows the measurement of the Oxygen Abundances for different samples.
+#   Just choose between 'sample', 'sdss' and 'control'
+#
+##############################################################################################
+
 #############################
 # Abundância Oxigênio
 #############################
