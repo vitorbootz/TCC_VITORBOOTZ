@@ -1,30 +1,44 @@
 ##############################################################################################
 # PURPOSE
-#    Read STARLIGHT output files
+#   Read STARLIGHT output files
+# 
+# CREATED BY:
+#   Marina Trevisan (in R)
+#
+# ADAPTED BY:
+#   Vitor Eduardo Buss Bootz (Conversion from R to python and adaptation)
 #
 # CALLING SEQUENCE
-#    source('read_starlight_output.R')   --> In R environment
-#    Rscript read_starlight_output.R     --> In terminal
+#   python read_starlight_output.py     --> In terminal
 #
 # INPUT PARAMETERS
-#    output.file           --> Output filename
-#    starlight.output.dir  --> Directory of input files
-#    starlight.files.name  --> Sufix of input file name
-#    spectra_z.file        --> List of objects
-#    BaseAges              --> Base file
-#    DR = 12               --> Spectra file name: DR12 or DR7 format
-#    age_format            --> Units of ages in the base file (yr or Gyr)
-#    met_format = 'Zsun'   --> Units of metallicitues in the base file (logZ_Zsun or Z)
-#    Z_sun = 0.019         --> Solar metallicity
+#   output_dir            --> Output directory name
+#   output_file           --> Output filename
+#   starlight_output_dir  --> Directory of input files
+#   spectra_z_file        --> List of objects
+#   BaseAges              --> Base file
+#   DR = 12               --> Spectra file name: DR12 or DR7 format
+#   age_format            --> Units of ages in the base file (yr or Gyr)
+#   met_format = 'Zsun'   --> Units of metallicitues in the base file (logZ_Zsun or Z)
+#   Z_sun = 0.019         --> Solar metallicity
 #    
 # OUTPUT
-#   output.file
+#   STARLIGHT_MAIN_RESULTS.csv
+#   Starlight_SFH_Mcor.csv
+#   Starlight_SFH_Mcor_cumul.csv
+#   Starlight_SFH_Mini.csv
+#   Starlight_SFH_Mini_cumul.csv
+#   Starlight_CEH_Lum.csv
+#   Starlight_CEH_Mcor.csv
+#   Starlight_CEH_Mini.csv
 #
 # REQUIRED SCRIPTS
+# cosmodist.py
 #   
 # COMMENTS
 #
 ##############################################################################################
+
 ##############################################################################################
 # INPUTS
 ##############################################################################################
