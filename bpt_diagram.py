@@ -1,27 +1,42 @@
+##############################################################################################
+# PURPOSE
+#   BPT-NII diagram plot   
+#
+# CREATED BY:
+#   Author: Jake VanderPlas <vanderplas@astro.washington.edu>
+#   License: BSD
+#
+# ADAPTED BY:
+#   Vitor Eduardo Buss Bootz
+#
+# CALLING SEQUENCE
+#   python bpt_diagram.py     --> In terminal
+#
+# INPUT PARAMETERS
+#   gal_line_dr7_v5_2.fit            --> SDSS sample of galaxies
+#   sample_flux_lines           --> Sample flux emission line values
+#   control_sample_flux_lines   --> Control sample flux emission line values
+#    
+# OUTPUT
+#   plot bpt_diagram.png
+#
+# REQUIRED SCRIPTS
+#
+#   
+# COMMENTS    
+#   [1] Baldwin, J. A.; Phillips, M. M.; Terlevich, R. (1981)
+#       http://adsabs.harvard.edu/abs/1981PASP...93....5B
+#   [2] Osterbrock, D. E.; De Robertis, M. M. (1985)
+#       http://adsabs.harvard.edu/abs/1985PASP...97.1129O
+#   [3] Kewley, L. J. `et al.` (2001)
+#       http://adsabs.harvard.edu/abs/2001ApJ...556..121K
+#
+##############################################################################################
+
 #############################
 # BPT DIAGRAM
 #############################
 
-"""
-SDSS Line-ratio Diagrams
-------------------------
-This shows how to plot line-ratio diagrams for the SDSS spectra.  These
-diagrams are often called BPT plots [1]_, Osterbrock diagrams [2]_,
-or Kewley diagrams [3]_. The location of the dividing line is taken from
-from Kewley et al 2001.
-
-References
-~~~~~~~~~~
-.. [1] Baldwin, J. A.; Phillips, M. M.; Terlevich, R. (1981)
-       http://adsabs.harvard.edu/abs/1981PASP...93....5B
-.. [2] Osterbrock, D. E.; De Robertis, M. M. (1985)
-       http://adsabs.harvard.edu/abs/1985PASP...97.1129O
-.. [3] Kewley, L. J. `et al.` (2001)
-       http://adsabs.harvard.edu/abs/2001ApJ...556..121K
-"""
-# Author: Jake VanderPlas <vanderplas@astro.washington.edu>
-# License: BSD
-#   The figure is an example from astroML: see http://astroML.github.com
 import numpy as np
 import pandas as pd
 import random
