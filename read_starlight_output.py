@@ -6,7 +6,7 @@
 #   Marina Trevisan (in R)
 #
 # ADAPTED BY:
-#   Vitor Eduardo Buss Bootz (Conversion from R to python and adaptation)
+#   Vitor Eduardo Buss Bootz (Conversion from R to Python and adaptation)
 #
 # CALLING SEQUENCE
 #   python read_starlight_output.py     --> In terminal
