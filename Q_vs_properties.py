@@ -1,3 +1,32 @@
+##############################################################################################
+# PURPOSE
+#   Creates the multiple plots relating the Q_i parameter with the properties of the LCGs (oxygen abundances, sSFR and concentration)
+# 
+# CREATED BY:
+#   Vitor Eduardo Buss Bootz
+#
+# ADAPTED BY:
+#
+# CALLING SEQUENCE
+#   python Q_vs_properties.py     --> In terminal
+#
+# INPUT PARAMETERS
+#   prop            --> Filename containing the properties of LCGs
+#   tidal           --> Filename containing the Q values measured by 'Tidal_Strength_Estimator.py'
+#   oxig            --> Filename containing the oxygen abundances
+#   starlight_output_dir  --> Directory of input files
+#    
+# OUTPUT
+#   3 .pdf plots: Q_OH.pdf, Q_sSFR.pdf, Q_concentration.pdf
+#
+# REQUIRED SCRIPTS
+#
+#   
+# COMMENTS
+#
+##############################################################################################
+
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -65,7 +94,7 @@ axis2.annotate(r'Pearson $\rho$: '+ str(round(pearson,3)) + '\np-value: '+ str(r
 axis2.set_title('Q vs Concentração', fontsize=15)
 
 plt.show()
-fig2.savefig('/home/vitorbootz/research/TCC_images/Q_vs_properties/Q_concentracao.pdf', bbox_inches='tight')
+fig2.savefig('/home/vitorbootz/research/TCC_images/Q_vs_properties/Q_concenetration.pdf', bbox_inches='tight')
 
 #####################################
 ############ sSFR ################
