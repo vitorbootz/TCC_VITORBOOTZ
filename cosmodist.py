@@ -1,3 +1,32 @@
+
+##############################################################################################
+# PURPOSE
+#   Cosmological distance calculator function
+#
+# CREATED BY:
+#   Author: Marina Trevisan (in R)
+#
+# ADAPTED BY:
+#   Vitor Eduardo Buss Bootz (conversion to Python)
+#
+# CALLING SEQUENCE
+#   python cosmodist.py     --> In terminal
+#
+# INPUT PARAMETERS
+#   z --> Redshift
+#   H0 --> Hubble constant
+#   Omega_m --> Matter density parameter
+#   Omega_l --> Cosmological constant
+#    
+# OUTPUT
+#   DH_Mpc, tH_Gyr, DM_Mpc, DA_Mpc, DL_Mpc, VC_Gpc3, TL_Gyr, DM
+#
+# REQUIRED SCRIPTS
+#   
+# COMMENTS    
+#
+##############################################################################################
+
 import numpy as np
 import pandas as pd
 
